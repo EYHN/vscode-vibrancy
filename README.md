@@ -36,11 +36,13 @@ MacOS ✔
 
 Every time after Code is updated, please re-enable vibrancy.
 
-## Warns：
-This extension works by editting the vscode's css file.
-So, a information appears while the first time to install or vscode update.U can click the [never show again] to avoid it.
+## Warning
+
+This extension works by editting VS Code's css file. So, a prompt will appear when installing `vscode-vibrancy` for the first time or each time VS Code updates. U can click [never show again] to hide it.
 
 ![screenshot](./warns.png)
+
+To fix the "[Unsupported]" warning on VS Code's title bar, please refer to this extension: [Fix VSCode Checksums](https://marketplace.visualstudio.com/items?itemName=lehni.vscode-fix-checksums).
 
 ## Options
 
