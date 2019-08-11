@@ -63,10 +63,14 @@ Opacity of Vibrancy Effect.
 
 #### vscode_vibrancy.theme
 
-Select Vibrancy theme.
+Select Vibrancy theme:
 
 * Default Dark
 * Dark (Only Subbar)
+
+|        Default Dark      |    Dark (Only Subbar)   |
+|:------------------------:|:-----------------------:|
+| ![](./theme-default.png) | ![](./theme-subbar.png) |
 
 > You can contribute more themes for us! [see here](https://github.com/EYHN/vscode-vibrancy/tree/master/themes).
 
