@@ -2,8 +2,12 @@
   box-shadow: none !important;
 }
 
-.minimap, .editor-scrollable>.decorationsOverviewRuler {
-  opacity: 0.6;
+.minimap {
+  opacity: 0.5;
+}
+
+.editor-scrollable>.decorationsOverviewRuler {
+  opacity: 0;
 }
 
 .editor-container {
@@ -21,7 +25,18 @@
 .monaco-workbench,
 .monaco-workbench .part,
 body {
+  --raw_black: 0, 0, 0;
+  --raw_white: 255, 255, 255;
+  --primary_raw_color: var(--raw_white);
+  --secondary_raw_color: var(--raw_black);
+  /* --primary_raw_color: var(--raw_black);
+  --secondary_raw_color: var(--raw_white); */
+  --shadow_opacity: 0.9;
+  --shadow: rgb(var(--secondary_raw_color), var(--shadow_opacity));
   background: transparent !important;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke: 0.12px rgb(var(--primary_raw_color));
+  text-shadow: -1px -1px 2.5px var(--shadow), 1px 1px 2.5px var(--shadow), -1px 1px 2.5px var(--shadow), 1px -1px 2.5px var(--shadow)
 }
 
 .editor-group-container>.tabs {
