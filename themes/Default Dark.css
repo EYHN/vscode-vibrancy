@@ -1,3 +1,12 @@
+/*ISSUE OPEN - [Rename box also becomes transparent #49]*/
+/* new - fix the Rename Symbol [F2] option, which was transparent */
+.monaco-editor.rename-box.preview  {
+  background: rgb(30 30 30 / 90%) !important;
+  border-radius: 0.4rem!important; 
+  padding: 0.3rem!important; 
+}
+
+
 .scroll-decoration {
   box-shadow: none !important;
 }
