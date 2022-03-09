@@ -19,7 +19,7 @@ var themeStylePaths = {
 	'Dark (Only Subbar)': '../themes/Dark (Only Subbar).css',
 	'Default Light': '../themes/Default Light.css',
 	'Light (Only Subbar)': '../themes/Light (Only Subbar).css',
-	'Noir ent blanc': '../themes/Noir ent blanc.css',
+	'Noir et blanc': '../themes/Noir et blanc.css',
 }
 
 const themeConfigPaths = {
@@ -27,7 +27,7 @@ const themeConfigPaths = {
 	'Dark (Only Subbar)': '../themes/Dark (Only Subbar).json',
 	'Default Light': '../themes/Default Light.json',
 	'Light (Only Subbar)': '../themes/Light (Only Subbar).json',
-	'Noir ent blanc': '../themes/Noir ent blanc.json',
+	'Noir et blanc': '../themes/Noir et blanc.json',
 }
 
 var defaultTheme = 'Default Dark';
