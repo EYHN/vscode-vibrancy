@@ -80,7 +80,7 @@ Select Vibrancy theme:
 
 |        Default Dark      |    Dark (Only Subbar)   |          Noir et blanc         |
 |:------------------------:|:-----------------------:|:------------------------------:|
-| ![](./theme-default.jpg) | ![](./theme-subbar.jpg) | ![](./theme-noir-et-blanc.jpg) |
+| ![](./theme-default.jpg) | ![](./theme-subbar.jpg) | ![](./theme-noir-et-blanc.png) |
 
 > You can contribute more themes for us! [see here](https://github.com/EYHN/vscode-vibrancy/tree/master/themes).
 
