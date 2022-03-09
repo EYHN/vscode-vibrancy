@@ -187,7 +187,7 @@ body {
 }
 
 .quick-input-widget {
-  background-color: rgb(243, 243, 243, 0.95) !important;
+  background-color: rgba(246, 246, 246, 0.95) !important;
   padding: 4px 6px !important; 
   border-radius: 10px !important;
   top: 50% !important;
