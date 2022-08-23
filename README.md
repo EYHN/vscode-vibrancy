@@ -1,3 +1,5 @@
+# The project is not actively maintained. To continue please move to [illixion/vscode-vibrancy-continued](https://github.com/illixion/vscode-vibrancy-continued)
+
 # Visual Studio Code Extension - Vibrancy
 
 > Windows 10 users may have a slight mouse lag when moving the window, [please read here for details](https://github.com/EYHN/vscode-vibrancy/discussions/80).
