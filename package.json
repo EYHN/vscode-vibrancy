@@ -1,123 +1,130 @@
 {
-  "name": "vscode-vibrancy",
-  "displayName": "Vibrancy",
-  "description": "Vibrancy Effect for Visual Studio Code",
-  "version": "1.0.16",
-  "publisher": "eyhn",
-  "author": {
-    "email": "cneyhn@gmail.com",
-    "name": "eyhn",
-    "url": "https://eyhn.in"
-  },
-  "engines": {
-    "vscode": "^1.57.0"
-  },
-  "categories": [
-    "Other",
-    "Themes"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/EYHN/vscode-vibrancy"
-  },
-  "bugs": {
-    "url": "https://github.com/EYHN/vscode-vibrancy/issues"
-  },
-  "preview": true,
-  "icon": "images/logo.png",
-  "galleryBanner": {
-    "color": "#EEEEEE"
-  },
-  "activationEvents": [
-    "*"
-  ],
-  "main": "./extension/index.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "extension.installVibrancy",
-        "title": "%extension.installVibrancy.title%"
-      },
-      {
-        "command": "extension.uninstallVibrancy",
-        "title": "%extension.uninstallVibrancy.title%"
-      },
-      {
-        "command": "extension.updateVibrancy",
-        "title": "%extension.updateVibrancy.title%"
-      }
-    ],
-    "configuration": {
-      "title": "Vibrancy Effect",
-      "properties": {
-        "vscode_vibrancy.type": {
-          "description": "%configuration.type.description%",
-          "type": "string",
-          "default": "auto",
-          "enum": [
-            "auto",
-            "acrylic",
-            "appearance-based",
-            "light",
-            "dark",
-            "titlebar",
-            "selection",
-            "menu",
-            "popover",
-            "sidebar",
-            "medium-light",
-            "ultra-dark"
-          ],
-          "enumDescriptions": [
-            "%configuration.type.auto.description%",
-            "%configuration.type.acrylic.description%",
-            "%configuration.type.appearance-based.description%",
-            "%configuration.type.light.description%",
-            "%configuration.type.dark.description%",
-            "%configuration.type.titlebar.description%",
-            "%configuration.type.selection.description%",
-            "%configuration.type.menu.description%",
-            "%configuration.type.popover.description%",
-            "%configuration.type.sidebar.description%",
-            "%configuration.type.medium-light.description%",
-            "%configuration.type.ultra-dark.description%"
-          ]
-        },
-        "vscode_vibrancy.opacity": {
-          "description": "%configuration.opacity.description%",
-          "type": "number",
-          "default": "-1"
-        },
-        "vscode_vibrancy.theme": {
-          "description": "%configuration.theme.description%",
-          "type": "string",
-          "default": "default dark",
-          "enum": [
-            "Default Dark",
-            "Dark (Only Subbar)",
-            "Default Light",
-            "Light (Only Subbar)"
-          ]
-        },
-        "vscode_vibrancy.imports": {
-          "description": "%configuration.imports.description%",
-          "type": "array",
-          "default": [
-            "$theme-style$"
-          ]
-        }
-      }
-    }
-  },
-  "scripts": {
-    "build-win10": "node-gyp rebuild"
-  },
-  "dependencies": {
-    "fs-extra": "^9.0.1",
-    "mz": "^2.7.0"
-  },
-  "devDependencies": {
-    "node-gyp": "^7.1.2",
-    "node-addon-api": "^3.1.0"
-  }
+	"name": "vscode-vibrancy",
+	"displayName": "Vibrancy",
+	"description": "Vibrancy Effect for Visual Studio Code",
+	"version": "1.0.16",
+	"publisher": "eyhn",
+	"author": {
+		"email": "cneyhn@gmail.com",
+		"name": "eyhn",
+		"url": "https://eyhn.in"
+	},
+	"engines": {
+		"vscode": "^1.57.0"
+	},
+	"categories": [
+		"Other",
+		"Themes"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/EYHN/vscode-vibrancy"
+	},
+	"bugs": {
+		"url": "https://github.com/EYHN/vscode-vibrancy/issues"
+	},
+	"preview": true,
+	"icon": "images/logo.png",
+	"galleryBanner": {
+		"color": "#EEEEEE"
+	},
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension/index.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.installVibrancy",
+				"title": "%extension.installVibrancy.title%"
+			},
+			{
+				"command": "extension.uninstallVibrancy",
+				"title": "%extension.uninstallVibrancy.title%"
+			},
+			{
+				"command": "extension.updateVibrancy",
+				"title": "%extension.updateVibrancy.title%"
+			}
+		],
+		"configuration": {
+			"title": "Vibrancy Effect",
+			"properties": {
+				"vscode_vibrancy.type": {
+					"description": "%configuration.type.description%",
+					"type": "string",
+					"default": "auto",
+					"enum": [
+						"auto",
+						"acrylic",
+						"appearance-based",
+						"light",
+						"dark",
+						"titlebar",
+						"selection",
+						"menu",
+						"popover",
+						"sidebar",
+						"medium-light",
+						"ultra-dark"
+					],
+					"enumDescriptions": [
+						"%configuration.type.auto.description%",
+						"%configuration.type.acrylic.description%",
+						"%configuration.type.appearance-based.description%",
+						"%configuration.type.light.description%",
+						"%configuration.type.dark.description%",
+						"%configuration.type.titlebar.description%",
+						"%configuration.type.selection.description%",
+						"%configuration.type.menu.description%",
+						"%configuration.type.popover.description%",
+						"%configuration.type.sidebar.description%",
+						"%configuration.type.medium-light.description%",
+						"%configuration.type.ultra-dark.description%"
+					]
+				},
+				"vscode_vibrancy.opacity": {
+					"description": "%configuration.opacity.description%",
+					"type": "number",
+					"default": "-1"
+				},
+				"vscode_vibrancy.theme": {
+					"description": "%configuration.theme.description%",
+					"type": "string",
+					"default": "default dark",
+					"enum": [
+						"Default Dark",
+						"Dark (Only Subbar)",
+						"Default Light",
+						"Light (Only Subbar)",
+						"Noir et blanc"
+					]
+				},
+				"vscode_vibrancy.imports": {
+					"description": "%configuration.imports.description%",
+					"type": "array",
+					"default": [
+						"$theme-style$"
+					]
+				}
+			}
+		}
+	},
+	"scripts": {
+		"build-win10": "node-gyp rebuild"
+	},
+	"dependencies": {
+		"fs-extra": "^9.0.1",
+		"mz": "^2.7.0"
+	},
+	"devDependencies": {
+		"node-gyp": "^7.1.2",
+		"node-addon-api": "^3.1.0"
+	},
+	"__metadata": {
+		"id": "d25a53a9-3c49-45b7-8751-ad426ccda154",
+		"publisherDisplayName": "eyhn",
+		"publisherId": "39ef2881-c0ea-419c-89f1-82ac920bf5a3",
+		"isPreReleaseVersion": false
+	}
 }
